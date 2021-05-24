@@ -1,0 +1,14 @@
+num = input('Введите число котороы вы хотет разобрать на четные и не четные: ')
+nul = list (num)
+i = 1
+c = 0
+count = []
+not_count = []
+while i <= len(nul):
+    if int(nul[c]) % 2 == 0:
+        count.append(nul[c])
+    else:
+        not_count.append(nul[c])
+    i += 1
+    c += 1
+print(f'Количество четных символов {len(count)} {count}, не четные {len(not_count)} {not_count}')
