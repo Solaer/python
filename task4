@@ -1,0 +1,29 @@
+import random
+
+albavit = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+def number ():
+    num1 = int(input('Введите первую цифру: '))
+    num2 = int(input('Введите последную цифру: '))
+    x = random.randint(num1, num2)
+    print(x)
+def version ():
+    ver1 = float(input('Введите первое число: '))
+    ver2 = float(input('Введите последнее число: '))
+    y = random.uniform(ver1, ver2)
+    print(round(y, 3))
+def letter ():
+    let1 = input('Введите первую букву: ')
+    let2 = input('Введите последную букву: ')
+    a1 = albavit.index(let1)
+    a2 = albavit.index(let2)
+    z = random.randint(a1, a2)
+    print(albavit[z])
+
+count = int(input('Что вы хотите получить (1 - случайное целое число, 2 - случайное вещественное число, 3 - случайную букву): '))
+
+if count == 1:
+    number()
+elif count == 2:
+    version()
+else:
+    letter()
