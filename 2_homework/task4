@@ -1,0 +1,18 @@
+n = int(input("Введите число что бы посчитать необходимое сумму эллементов последовательности: 1 -0.5 0.25 -0.125 ... Число:"))
+a = 1
+b = (-2)
+m = a
+i = 1
+c = a / b
+r = [1]
+r.append(c)
+if n <= 0 :
+    print("Wait, That’s Illegal")
+else:
+    while i < n:
+        m = m + c
+        c = c / b
+        i += 1
+        r.append(c)
+    print(m)
+    print(r)
