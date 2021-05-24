@@ -1,0 +1,36 @@
+import random
+
+mode = ''
+choise = int(input("Выберети уровень сложности:" 
+                   "\n0 - Папуль, можно поиграть? (20 попыток), "
+                   "\n1 - я и за 10 управлюсь (10 попыток), "
+                   "\n2 - попробуем по сложнее (8 попыток), "
+                   "\n3 - я Шерлок Холмс (5 попыток), "
+                   "\n4 - Ты либо бог, либо читер (1 ПОПЫТКА): "))
+if choise == 0:
+    mode == 20
+if choise == 1:
+    mode = 10
+elif choise == 2:
+    mode = 8
+elif choise == 3:
+    mode = 5
+elif choise == 4:
+    mode = 1
+i = 0
+ran = random.randint(1, 100)
+while i < mode:
+    mind = int(input())
+    if i == (mode - 1):
+        print("you lose")
+        print(ran)
+        break
+    if ran == mind:
+        print('you win')
+        break
+    elif ran > mind:
+        print('Больше')
+        i += 1
+    elif ran < mind:
+        print('Меньше')
+        i += 1
