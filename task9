@@ -1,0 +1,16 @@
+side1 = int(input())
+side2 = int(input())
+side3 = int(input())
+
+if side1 + side2 > side3 and side2 + side3 > side1 and side1 + side3 > side2:
+    print('Данный треугольник может сушествовать')
+    if side1 == side2 or side2 == side3 or side3 == side1:
+        print("Данный теругольник являеться равнобедренным")
+    elif side1 == side2 == side3:
+        print("Данный треугольник являеться равностаренным")
+    elif side1^2 + side2^2 == side3^2 or side2^2 + side3^2 == side1^2 or side3^2 + side1^2 == side2^2:
+        print("Данный треугольник являеться прымым")
+    else:
+        print('Данный треугольник являеться разностаронним')
+else:
+    print('Этот трегольник не может существовать')
