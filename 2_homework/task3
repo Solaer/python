@@ -1,0 +1,10 @@
+num = input('Введите число которое выхоте перевернуть: ')
+lnum = list(num)
+i = 0
+c = len(num) - 1
+mun = ''
+while i < len(num):
+    mun = str(mun) + num[c]
+    c -= 1
+    i += 1
+print(f'Получившоеся число {mun}')
